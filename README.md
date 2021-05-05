@@ -1,5 +1,5 @@
 # Cloud-Based-Health-Monitoring-System
-We implemented a Cloud Based Health Monitoring Website using Django which is hosted in AWS as a part of Cloud Computing Course in IIT Kharagpur.
+We implemented a Cloud Based Health Monitoring Website using Django which is hosted in AWS, as a part of Cloud Computing Course in IIT Kharagpur.
 
 #### Idea of the Project
 The user enters his/her health information in the website under his account. Then a model predicts predicts the probablities of various diseases and securely stores the user's information using password based encryption.
