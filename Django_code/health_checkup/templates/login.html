@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Login</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../static/temp_login.css" />
+</head>
+
+<body>
+	<div id="header"><h1>Cloud Based Health Monitoring System</h1></div>
+	<div id="header2"><h2>Please enter the Following Details</h2></div>
+	<div id="data">
+	<form action="login" method="POST">
+		{% csrf_token %}
+		<input type="text" name="user" placeholder="Username">
+		<input type="password" name="pass" placeholder="Password">
+		<input type="Submit">
+	</form>
+	</div>
+	<div id="message">
+		{% for message in messages %}
+		<h3>
+			{{message}}
+		</h3>
+		{% endfor %}
+	</div>
+	</div>
+	<div id="header5"><h3>Dont have an account? Create a new account</h3></div>
+	<form action="../register/" method="get">
+		<input type="submit" name="reg" value="Register">
+	</form>
+	</div>
+</body>
+</html>

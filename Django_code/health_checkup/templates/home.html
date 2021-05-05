@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../static/temp_home.css" />
+</head>
+
+
+
+
+
+
+<body>
+	<div id="header"><h1>Cloud Based Health Monitoring System</h1></div>
+	<div id="data">
+	<div id="header2"><h2>Hello {{name}}</h2></div>
+	<div id="header3"><h3>Please enter your Health Details</h3></div>
+	<form action='\data\' method='GET'>
+		<input type="text" name="age" placeholder="Age"> <br>
+		<input type="text" name="gen" placeholder="Gender(m/f)"><br>
+		<input type="text" name="wei" placeholder="Weight(kg)"><br>
+		<input type="text" name="hei" placeholder="Height(cm)"><br>
+		<input type="text" name="bp" placeholder="Blood pressure(systole)"><br>
+		<input type="text" name="sug" placeholder="Sugar level(mg/dL)"><br>
+		<input type="text" name="temp" placeholder="Temperature(C)"><br>
+		<input type="text" name="blo" placeholder="Haemoglobin count"><br>
+		<input type="submit" name="Submit">
+	</form>
+
+	<br>
+	<br>
+
+	<div id="header4"><h3>Click here to view your Health History</h3></div>
+	<form action="view" method="get">
+		<input type="submit" name="view" value="View history">
+	</form>
+	</div>
+	<div id="header5"><h3>Click here to logout</h3></div>
+	<form action="logout" method="get">
+		<input type="submit" name="log" value="Logout">
+	</form>
+	</div>
+</body>
+</html>
